@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBcYqwqCxTLttePpPenUpdIXQfmwwmTEqU",
-  authDomain: "organizeit-scheduler.firebaseapp.com",
-  projectId: "organizeit-scheduler",
-  storageBucket: "organizeit-scheduler.appspot.com",
-  messagingSenderId: "1097761620814",
-  appId: "1:1097761620814:web:f2d4fa9546ef0fc2fe941f",
-  measurementId: "G-FBWEGMLVD4",
+  apiKey: "AIzaSyBM61ZAgz2xQn6sv6g7mi01INGk2jv9KIQ",
+  authDomain: "scheduler-e9326.firebaseapp.com",
+  projectId: "scheduler-e9326",
+  storageBucket: "scheduler-e9326.appspot.com",
+  messagingSenderId: "596432139170",
+  appId: "1:596432139170:web:14d9e962c60b6907ef78fb",
+  measurementId: "G-JYLGSKR068",
 };
 
 // Initialize Firebase
