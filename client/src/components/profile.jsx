@@ -3,6 +3,7 @@ import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
 import "./components.css";
 import img from "../assets/logo.png";
+import Homepage from "./homepage";
 function Profile() {
   const [userDetails, setUserDetails] = useState(null);
   const [showMenu, setShowMenu] = useState(false);
@@ -88,6 +89,7 @@ function Profile() {
           ""
         )}
       </nav>
+      <Homepage />
     </div>
   );
 }
