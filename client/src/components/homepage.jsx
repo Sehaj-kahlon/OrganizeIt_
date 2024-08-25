@@ -16,11 +16,16 @@ function Homepage() {
     return { formattedDate, year };
   };
   const { formattedDate, year } = TodayDate();
+
   return (
     <div>
       <div className="day_date">
         <h2>{year}</h2>
-        <h3>{formattedDate}</h3>
+        <div className="controllers">
+          <i class="fa-solid fa-chevron-left" ></i>
+          <h3>{formattedDate}</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
       </div>
     </div>
   );
