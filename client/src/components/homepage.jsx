@@ -1,30 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./components.css";
+
 function Homepage() {
-  const TodayDate = () => {
-    const today = new Date();
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  const TodayDate = (date) => {
     const weekday = new Intl.DateTimeFormat("en-US", {
       weekday: "short",
-    }).format(today);
-    const year = today.getFullYear();
+    }).format(date);
+    const year = date.getFullYear();
     const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
-      today
+      date
     );
-    const day = String(today.getDate()).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
 
     const formattedDate = `${day}/${weekday}/${month}`;
     return { formattedDate, year };
   };
-  const { formattedDate, year } = TodayDate();
+
+  const { formattedDate, year } = TodayDate(currentDate);
+
+  const goToPreviousDay = () => {
+    const previousDay = new Date(currentDate);
+    previousDay.setDate(currentDate.getDate() - 1);
+    setCurrentDate(previousDay);
+  };
+
+  const goToNextDay = () => {
+    const nextDay = new Date(currentDate);
+    nextDay.setDate(currentDate.getDate() + 1);
+    setCurrentDate(nextDay);
+  };
 
   return (
     <div>
       <div className="day_date">
         <h2>{year}</h2>
         <div className="controllers">
-          <i class="fa-solid fa-chevron-left" ></i>
+          <i className="fa-solid fa-chevron-left" onClick={goToPreviousDay}></i>
           <h3>{formattedDate}</h3>
-          <i class="fa-solid fa-chevron-right"></i>
+          <i className="fa-solid fa-chevron-right" onClick={goToNextDay}></i>
         </div>
       </div>
     </div>
