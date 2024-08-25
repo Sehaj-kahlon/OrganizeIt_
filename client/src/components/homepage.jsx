@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./components.css";
-
+import Todolist from "./todolist";
+// import Calendar from "./calendar";
 function Homepage() {
   const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -41,6 +42,10 @@ function Homepage() {
           <h3>{formattedDate}</h3>
           <i className="fa-solid fa-chevron-right" onClick={goToNextDay}></i>
         </div>
+      </div>
+      <div className="main">
+        <Todolist />
+        {/* <Calendar /> */}
       </div>
     </div>
   );
