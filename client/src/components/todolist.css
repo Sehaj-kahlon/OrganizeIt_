@@ -1,6 +1,7 @@
 .todolist {
-  img {
-    width: 45%;
-    max-height: 70vh;
-  }
+  /* border: 2px solid black; 
+  box-sizing: border-box; 
+  padding: 20px 20px 0px 0px; 
+  text-align: center; 
+  color: green; */
 }
