@@ -1,7 +1,30 @@
-.todolist {
-  /* border: 2px solid black; 
-  box-sizing: border-box; 
-  padding: 20px 20px 0px 0px; 
-  text-align: center; 
-  color: green; */
+.boxelement {
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 10px 5px 0px 5px;
+  text-align: center;
+  color: black;
+  width: 50%;
+  border-radius: 10px;
+}
+.heading {
+  align-items: center;
+}
+.sub-heading {
+  font-style: italic;
+  font-weight: 300;
+  align-content: flex-start;
+  padding: 0px 5px 0px px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.add {
+  cursor: pointer;
+}
+.add:focus {
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 3px;
+  outline: none; /* Remove the default outline, if desired */
 }
