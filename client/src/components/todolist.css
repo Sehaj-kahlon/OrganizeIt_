@@ -19,12 +19,12 @@
   display: flex;
   justify-content: space-between;
 }
-.add {
-  cursor: pointer;
+.Row {
+  display: flex;
+  flex-direction: column;
 }
-.add:focus {
-  background-color: lightgrey;
-  border-radius: 5px;
-  padding: 3px;
-  outline: none; /* Remove the default outline, if desired */
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
